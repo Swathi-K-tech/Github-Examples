@@ -3,7 +3,7 @@ on:
   - push
 jobs:
   hello-world:
-    if: github.repository == 'Swathi-K-tech/Github-Examples'
+    if: github.repository == 'Swathi/Github-Examples'
     runs-on: ubuntu-latest
     steps:
       - name: hello
