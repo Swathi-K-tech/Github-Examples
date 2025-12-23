@@ -1,15 +1,15 @@
-name: "Webhook Event example"
-
+name: example-workflow
 on:
-  repository_dispatch:
-    types:
-      - webhook
-
+  - push
 jobs:
-  respond-to-dispatch:
+  hello-world:
+    if: github.repository == 'Swathi-K-tech/Github-Examples'
     runs-on: ubuntu-latest
     steps:
-      - name Checkout repo
-        uses: actions/checkout@v2
-      - name: Run a script
-        run: echo "Event of type: $GITHUB_EVENT_NAME"
+      - name: hello
+        run: echo "Hello world"
+  goodbye-moon:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hello
+        run: echo "Hello world"
