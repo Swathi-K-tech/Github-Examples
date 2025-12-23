@@ -1,4 +1,4 @@
-name: example-workflow
+name: context
 on:
   - push
 jobs:
@@ -11,5 +11,5 @@ jobs:
   goodbye-moon:
     runs-on: ubuntu-latest
     steps:
-      - name: hello
-        run: echo "Hello world"
+      - name: good bye
+        run: echo "Good Bye Moon"
